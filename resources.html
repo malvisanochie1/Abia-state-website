@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      .layout {
+        margin: auto;
+        width: 440px;
+        height: 470px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body class="text-[#1D2026]">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-auto">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="index.html">
+          <img
+            src="Images/logo.png"
+            class="h-16 md:h-20 xl:h-28"
+            alt="Abia state Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-[#006A31E5] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent xl:text-lg font-semibold hover:text-white text-base lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="Opportunities.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg xl:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Opportunities</a
+              >
+            </li>
+            <li>
+              <a
+                href="All_program_categories.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Programs & Event</a
+              >
+            </li>
+            <li>
+              <a
+                href="resources.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >News & Updates</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact-us.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 h"
+                >Contact</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="Become-a-partner.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+              >
+                <button
+                  class="bg-[#006A31E5] text-white md:rounded text-base px-6 py-2"
+                >
+                  Get Started
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="flex justify-between bg-[#EDFCF8ED] flex-row">
+      <div class="flex items-center justify-between w-5/12">
+        <div class="ps-4 xl:ps-20">
+          <h1
+            class="text-xl sm:2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium"
+          >
+            Empower yourself with knowledge
+          </h1>
+          <p
+            class="text-sm md:text-lg lg:text-xl my-3 md:my-6 font-normal text-[#000000]"
+          >
+            Embark on a transformative learning journey with our comprehensive
+            learning resources. Unleash your full potential through diverse
+            courses and interactive modules.
+          </p>
+          <a
+            href="#"
+            class="block text-[#0E192C] mb-20 rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+          >
+            <button
+              class="bg-[#006A31E5] text-white rounded text-base px-12 py-3 translate-y-1 hover:translate-y-0 duration-200"
+            >
+              Enrol Now
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="overfow-hidden w-6/12">
+        <img
+          src="Images/resources/Mask group.png"
+          loading="lazy"
+          alt="Photo of the governor "
+          class="h-full w-full object-cover object-center"
+        />
+      </div>
+    </section>
+
+    <section>
+      <div class="p-3 text-center my-10">
+        <h2 class="text-xl md:text-2xl mb-2 font-bold">Browse top category</h2>
+      </div>
+      <div class="md:w-11/12 lg:max-w-7xl mx-auto">
+        <div>
+          <div
+            class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-4 lg:px-2"
+          >
+            <div class="flex bg-[#0777c710] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (1).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Development</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#E1F7E3] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145.png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Business</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#FFF2E5] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (2).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-lg font-semibold truncate">
+                    Finance & Accounting
+                  </h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#FFF0F0] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145.png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">IT & Software</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="flex bg-[#ffffff] shadow-md p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (4).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-lg font-semibold truncate">
+                    Personal Development
+                  </h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#F5F7FA] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (5).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold truncate">
+                    Office Productivity
+                  </h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#0776C710] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (6).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Marketing</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#F5F7FA] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (7).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-lg font-semibold truncate">
+                    Photography & Video
+                  </h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <!-- row 3  -->
+            <div class="flex bg-[#FFF2E5] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (8).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Lifestyle</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#00AFEF10] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (9).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Design</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#E1F7E3] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (10).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Health & Fitness</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex bg-[#FFF2E5] p-2 py-5">
+              <div class="w-4/12 flex items-center">
+                <img src="Images/resources/Frame 145 (11).png" alt="" />
+              </div>
+              <div class="w-8/12 flex flex-col justify-between py-1">
+                <div class="flex items-start">
+                  <h5 class="text-xl font-semibold">Music</h5>
+                </div>
+                <div class="flex items-end">
+                  <h5 class="text-lg font-normal">233 Enrolled</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mt-10">
+            <h5 class="text-sm">We have more category & subcategory.</h5>
+            <a href="#">
+              <h5 class="text-sm text-[#00AFEF] flex items-center ms-1">
+                Browse All
+                <span
+                  ><img
+                    src="Images/resources/ArrowRight.png"
+                    class="h-4 w-5 ms-2"
+                    alt=""
+                /></span>
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#EDFCF8] py-16 mt-20">
+      <div class="p-3 text-center my-10">
+        <h2 class="text-xl md:text-4xl mb-2 font-bold">Our Programs</h2>
+      </div>
+
+      <div
+        class="flex flex-wrap md:w-11/12 p-4 lg:max-w-7xl gap-6 justify-center mx-auto"
+      >
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Mask group (1).png"
+            alt="An image a fashion student "
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  Fashion
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Becoming the best in the fabric cutting and gown drawing
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  264<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/how-to-be-a-self-taught-web-developer 1.png"
+            alt="An image of how to became a self trained web developer"
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  Developments
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                The Complete 2024 Web Development Training
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  100<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Black-Women-Financial-Experts 1 (1).png"
+            alt="An image of a black financial expert "
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  Business
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Learn Business Management and Accounting
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  28<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Mask group (2).png"
+            alt="An image a fashion student "
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  Marketing
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                The Complete Digital Marketing Course
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  300<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Mask group (3).png"
+            alt="An image a fashion student "
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  Engineering
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Master Engineering Concepts and Works
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  267.7k<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Mask group (4).png"
+            alt="An image a young artist "
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  Music
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Introduction to music voice coaching & mix
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  264<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/cate 1.png"
+            alt="An image a happy cattery student "
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  catering
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Commercial catering and Event Management
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  289<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Mask group (5).png"
+            alt="An image a financial expert"
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  FINANCE
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Digital financing in the modern edge today
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  264<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/side-view-young-serious-black-man-painting-new-artwork_236854-45132 1.png"
+            alt="side view young serious black man painting new artwork"
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  ART
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Art Sketching and free digital drawing training
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  100<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[244px] bg-white">
+          <img
+            src="Images/resources/Mask group (6).png"
+            alt="An image a happy small business owner"
+          />
+          <div>
+            <div class="p-4 border-b">
+              <div class="flex justify-between items-center mb-3">
+                <button
+                  class="text-xs text-[#00AFEF] bg-[#00AFEF10] px-3 py-1 rounded"
+                >
+                  ENTERPRENUER
+                </button>
+                <h4 class="text-xl text-[#006A31] font-semibold">Free</h4>
+              </div>
+              <p class="text-sm font-semibold">
+                Google Analytics Certification - Learn How To Pass The Exam
+              </p>
+            </div>
+            <div class="flex items-center justify-between p-4">
+              <div class="flex items-center">
+                <img
+                  src="Images/resources/Star.png"
+                  class="h-3"
+                  alt="star Image"
+                />
+                <p class="text-sm font-semibold ms-0.5">5.0</p>
+              </div>
+              <div class="flex items-center">
+                <p class="text-sm font-semibold">
+                  264<span class="font-normal ms-1">students </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-10">
+        <a href="#" class="bg-[#006A3110] py-2 px-4">
+          <button class="text-sm text-[#006A3190] flex items-center ms-1">
+            Browse All
+            <span
+              ><img
+                src="Images/resources/ArrowRight (1).png"
+                class="h-4 w-5 ms-2"
+                alt=""
+            /></span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="bg-[#F5F7FA] text-white py-24 w-full sm:px-20 xl:flex xl:gap-4">
+      <!----------------- from-sm-screen------>
+      <div
+        style="
+          background-image: url('Images/resources/Become\ an\ Instructor.png');
+        "
+        class="bg-cover min-h-72 xl:min-h-max hidden bg-right sm:flex items-center xl:w-6/12 max-w-3xl mx-auto"
+      >
+        <div class="p-8 w-8/12">
+          <h1 class="text-lg font-medium">Become a Partner Course Provider</h1>
+          <p class="text-sm my-3 font-normal text-[#ffffff]">
+            Provide the tools and skills to teach what you love. Become one of
+            our verified course partner that would train our enrolled youth
+          </p>
+          <div class="flex items-center mt-4">
+            <a href="#" class="bg-white h-10 w-40 grid place-content-center">
+              <button class="text-base text-[#006A31] flex items-center ms-1">
+                Apply now
+                <span
+                  ><img
+                    src="Images/resources/ArrowRight (1).png"
+                    class="h-4 w-5 ms-2"
+                    alt=""
+                /></span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!---------------0 to sm:screen--------->
+      <div
+        class="bg-gradient-to-r from-[#006A31] from-60% to-[#000000] to-100% min-h-72 xl:min-h-max bg- bg-right sm:hidden flex items-center xl:w-6/12 max-w-3xl mx-auto"
+      >
+        <div class="p-6">
+          <h1 class="text-lg font-medium">Become a Partner Course Provider</h1>
+          <p class="text-sm my-3 font-normal text-[#ffffff]">
+            Provide the tools and skills to teach what you love. Become one of
+            our verified course partner that would train our enrolled youth
+          </p>
+          <div class="flex items-center mt-4">
+            <a href="#" class="bg-white h-10 w-40 grid place-content-center">
+              <button class="text-base text-[#006A31] flex items-center ms-1">
+                Apply now
+                <span
+                  ><img
+                    src="Images/resources/ArrowRight (1).png"
+                    class="h-4 w-5 ms-2"
+                    alt=""
+                /></span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!----------------------------  
+        ----------------------------->
+      <div
+        class="bg-white mx-auto min-h-72 xl:min-h-max bg-right flex items-center text-black xl:w-6/12  max-w-3xl"
+      >
+        <div class="p-8 space-y-5">
+          <h2 class="text-2xl font-semibold">
+            Your step to becoming a partner
+          </h2>
+          <div class="sm:flex gap-6 space-y-5 justify-between items-center">
+            <div class="flex gap-3 items-center">
+              <p
+                class="w-12 xl:w-10 h-12 xl:h-10 rounded-full grid place-content-center bg-[#006A3110] text-[#006A3190] sm:text-lg xl:text-2xl font-semibold"
+              >
+                1
+              </p>
+              <p class="text-sm :text-xs text-[#1D2026]">
+                Apply to become partner
+              </p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <p
+                class="w-12 xl:w-10 h-12 xl:h-10 rounded-full grid place-content-center bg-[#006A3110] text-[#006A3190] sm:text-lg xl:text-2xl font-semibold"
+              >
+                1
+              </p>
+              <p class="text-sm :text-xs text-[#1D2026]">
+                Apply to become partner
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex gap-6 space-y-5 justify-between items-center">
+            <div class="flex gap-3 items-center">
+              <p
+                class="w-12 xl:w-10 h-12 xl:h-10 rounded-full grid place-content-center bg-[#006A3110] text-[#006A3190] sm:text-lg xl:text-2xl font-semibold"
+              >
+                1
+              </p>
+              <p class="text-sm :text-xs text-[#1D2026]">
+                Apply to become partner
+              </p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <p
+                class="w-12 xl:w-10 h-12 xl:h-10 rounded-full grid place-content-center bg-[#006A3110] text-[#006A3190] sm:text-lg xl:text-2xl font-semibold"
+              >
+                1
+              </p>
+              <p class="text-sm :text-xs text-[#1D2026]">
+                Apply to become partner
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------  
+        ----------------------------->
+    </section>
+       <!------------------------------------- 
+             support section
+   ------------------------------------->
+   <div class="">
+    <section
+      style="background-image: url('Images/project-bg.png')"
+      class="px-6 sm:px-20 lg:px-8 py-8 sm:py-16 lg:py-2 flex items-center lg:h-[80vh]"
+    >
+      <div
+        class="grid grid-cols-1 gap-x-4 lg:grid-cols-2 lg:gap-8 xl:w-11/12 mx-auto"
+      >
+        <div class="flex items-center order-2 lg:order-1">
+          <div class="order-2 lg:order-1 h-full flex items-center">
+            <div class="my-7 md:my-16 max-w-xl">
+              <h1
+                class="text-[#272A28] text-3xl sm:text-4xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-10"
+              >
+              Shaping Abia economy with digital training to produce skilled young artisans in modern businesses
+              </h1>
+              <p class="text-[#272A28] text-[16px] text- text-pretty">
+                Empower yourself with knowledge, skills and insights designed to navigate the challenges of today and build a successful future.
+                Elevate your knowledge bank and embrace personal growth at every step.
+              </p>
+              <div class="flex mt-6 gap-8">
+                <a
+                  href="#"
+                  class="block text-[#0E192C] rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+                >
+                  <button
+                    class="bg-[#006A31E5] text-white text-xs sm:text-sm w-36 py-3 rounded-[3px] mt-4"
+                  >
+                    Enrol
+                  </button>
+                </a>
+                <a
+                  href="#"
+                  class="block text-[#0E192C] rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+                >
+                  <button
+                    class="bg-[#272A28] text-white text-xs sm:text-sm w-36 py-3 rounded-[3px] mt-4"
+                  >
+                    See More
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-end order-1 lg:order-2">
+          <img src="Images/resources/digital.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </div>
+  <!------------------------------------- 
+           support section
+ ------------------------------------->
+ <!-- footer -->
+ <section class="bg-[#F2F2F2] pt-4 sm:pt-10 lg:pt-12">
+  <footer class="mx-auto max-w-screen-2xl px-4 md:px-16">
+    <div
+      class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12"
+    >
+      <div class="col-span-full lg:col-span-2 font-medium">
+        <!-- logo - start -->
+        <div class="mb-4 lg:-mt-2 -ms-5">
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl"
+            aria-label="logo"
+          >
+            <img src="Images/bg.png" class="w-48" alt="Abia state logo" />
+          </a>
+        </div>
+        <!-- logo - end -->
+
+        <p class="mb-6 text-gray-700 sm:pr-8">
+          Creating an enabling environment where every young person is
+          supported to thrive.
+        </p>
+
+        <!-- social - start -->
+        <div class="flex items-center gap-4">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook text-3xl"></i>
+          </a>
+          <a href="#"> <i class="fa-brands fa-whatsapp text-3xl"></i> </a
+          ><a href="#"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+        </div>
+        <!-- social - end -->
+        <p
+          class="text-gray-700 font-medium mt-12 mb-2 text-lg text- text-pretty"
+        >
+          info@abiayouthempowerment.com
+        </p>
+        <p class="text-gray-700 font-medium text-lg text- text-pretty">
+          26 Massenya street, Abia sample Address
+        </p>
+      </div>
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          About
+        </div>
+
+        <nav class="flex flex-col gap-4 font-medium">
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Who are we</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Our focus area</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Our program</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Our projects</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          Media
+        </div>
+
+        <nav class="flex flex-col gap-4 font-medium">
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Publications</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Policies
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Press Release</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Videos</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Webinars</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          Get Involved
+        </div>
+
+        <nav class="flex flex-col gap-4 font-medium">
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Donate</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Careers</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Volunteer with us
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+    </div>
+
+    <div
+      class="border-t-2 border-[#00000060] py-8 text-center font-medium text-gray-700"
+    >
+      © 2024 Office – Abia youth empowerment. All Rights Reserved.
+    </div>
+  </footer>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>

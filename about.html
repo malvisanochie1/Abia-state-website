@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      .layout {
+        margin: auto;
+        width: 440px;
+        height: 470px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-auto">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="index.html">
+          <img
+            src="Images/logo.png"
+            class="h-16 md:h-20 xl:h-28"
+            alt="Abia state Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-[#006A31E5] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent xl:text-lg font-semibold hover:text-white text-base lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="Opportunities.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg xl:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Opportunities</a
+              >
+            </li>
+            <li>
+              <a
+                href="All_program_categories.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Programs & Event</a
+              >
+            </li>
+            <li>
+              <a
+                href="resources.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >News & Updates</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact-us.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 h"
+                >Contact</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="Become-a-partner.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+              >
+                <button
+                  class="bg-[#006A31E5] text-white md:rounded text-base px-6 py-2"
+                >
+                  Get Started
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      style="
+        background-image: url('Images/Opportunities/Essential-Skills-Image-scaled\ 1.png');
+      "
+      class="md:h-[80vh] h-32 mx-auto relative"
+    >
+      <div class="h-full flex items-center">
+        <div class="z-10 w-full px-6 md:px-20 mx-auto">
+          <h2 class="md:text-5xl text-3xl text-start text-white font-bold mb-3">About</h2>
+          <hr class="md:w-52 w-32 h-[6px] md:h-2 bg-[#32B46E] rounded-md" />
+        </div>
+      </div>
+      <div class="w-full h-full absolute bg-[#080808] top-0 opacity-45"></div>
+    </section>
+
+    <!--------------------------------------------------------    
+                           Who are we section
+    ---------------------------------------------------------->
+    <div class="my-7 md:my-16 max-w-5xl mx-auto px-4">
+      <h1
+        class="text-center text-[#272A28] text-3xl sm:text-4xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-10"
+      >
+        Who are we
+      </h1>
+      <p class="text-[#272A28] text-[16px] font-semibold text-pretty">
+        We are thrilled to introduce an initiative aimed at elevating and
+        empowering  Abia state’s dynamic youth. Our goal is to develop
+        leadership in the next generation of young people by providing
+        opportunities and encouraging creativity.  
+      </p>
+      <p class="text-[#272A28] my-7 text-lg font-semibold text-pretty">
+        This program will focus on data-driven youth development processes,
+        talent harvesting in sports, access to information, business and
+        enterprise, incubation through the innovation lab program, capacity
+        development, and empowerment monitoring to create a robust framework
+        that addresses the multifaceted needs of our young population while also
+        focusing on addressing critical issues such as sexual and reproductive
+        health and rights (SRHR) and drug abuse. AYEIP is designed to promote
+        inclusion, upskilling, technology integration, and sports excellence
+        while driving innovation, collaboration, and economic growth among the
+        youth population of the state.
+      </p>
+      <p class="text-[#272A28] text-lg font-semibold text-pretty">
+        The goal of AYEIP is to help young people reach their full potential by
+        giving them access to a range of resources, support networks and
+        programs.
+      </p>
+    </div>
+    <!--------------------------------------------------------    
+                          End of Who are we section
+    ---------------------------------------------------------->
+    <!--------------------------------------------------------    
+                         vision section
+    ---------------------------------------------------------->
+    <section class="hidden md:flex justify-between bg-[#EDFCF8ED]- flex-row">
+      <div
+        class="h-[35vh]- md:h-[60vh]- overfow-hidden bg-gray-100 shadow-lg w-6/12"
+      >
+        <img
+          src="Images/about/Alex-Otti 1.png"
+          loading="lazy"
+          alt="Photo of the governor "
+          class="h-full w-full object-cover object-center"
+        />
+      </div>
+
+      <div class="flex items-center justify-between w-6/12 bg-[#0E443F]">
+        <div class="ps-4 xl:ps-20 text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            id="IconChangeColor"
+            height="34"
+            width="34"
+          >
+            <g>
+              <path
+                fill="none"
+                d="M0 0h24v24H0z"
+                id="mainIconPathAttribute"
+              ></path>
+              <path
+                d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
+                id="mainIconPathAttribute"
+              ></path>
+            </g>
+          </svg>
+          <p class="max-w-md text-xl">
+            My holistic vision for the Abia State, Youth & Sports Sector is to
+            drive a sustainable and Inclusive youth development and promote
+            sports excellence as a contributor to economic growth, healthy
+            living and a safe society.
+          </p>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            id="IconChangeColor"
+            class="text-white"
+            height="34"
+            width="34"
+          >
+            <g>
+              <path
+                fill="none"
+                d="M0 0h24v24H0z"
+                id="mainIconPathAttribute"
+              ></path>
+              <path
+                d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179zm-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311C4.591 12.322 3.17 10.841 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179z"
+                id="mainIconPathAttribute"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <div
+      class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 md:hidden bg-[#0E443F]"
+    >
+      <div class="">
+        <img
+          src="Images/about/Alex-Otti 1.png"
+          loading="lazy"
+          alt="Photo of the governor "
+          class="h-full w-full object-cover object-center"
+        />
+      </div>
+      <div class="pb-2">
+        <div class="ps-4 xl:ps-20 text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            id="IconChangeColor"
+            height="34"
+            width="34"
+          >
+            <g>
+              <path
+                fill="none"
+                d="M0 0h24v24H0z"
+                id="mainIconPathAttribute"
+              ></path>
+              <path
+                d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
+                id="mainIconPathAttribute"
+              ></path>
+            </g>
+          </svg>
+          <p class="max-w-md text-xl">
+            My holistic vision for the Abia State, Youth & Sports Sector is to
+            drive a sustainable and Inclusive youth development and promote
+            sports excellence as a contributor to economic growth, healthy
+            living and a safe society.
+          </p>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            id="IconChangeColor"
+            class="text-white"
+            height="34"
+            width="34"
+          >
+            <g>
+              <path
+                fill="none"
+                d="M0 0h24v24H0z"
+                id="mainIconPathAttribute"
+              ></path>
+              <path
+                d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179zm-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311C4.591 12.322 3.17 10.841 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179z"
+                id="mainIconPathAttribute"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------    
+                          End of Vision section
+    ---------------------------------------------------------->
+    <!--------------------------------------------------------- 
+                                Vision
+     --------------------------------------------------------->
+    <section class="bg-[#EDFCF8] px-4 pt-10">
+      <div
+        class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto md:p-16 md: text-xl sm:text-2xl md:text-3xl font-semibold px-4 text-center"
+      >
+        <h1>Our Vision & Mission</h1>
+      </div>
+      <div
+        class="flex flex-wrap gap-8 lg:space-y-0 my-12 md:mt-0 lg:max-w-5xl mx-auto"
+      >
+        <div
+          style="background-image: url('Images/our-mission.png')"
+          class="mx-auto h-[470px] relative w-[420px] rounded-[30px] bg-black"
+        >
+          <div
+            class="absolute rounded-[30px] h-full flex items-end w-full bg-gradient-to-t opacity-100 from-[#153230] from-50% to-[#00000060] to-60% p-8"
+          >
+            <div class="h-6/12"></div>
+            <div class="h-54 md:h-44">
+              <h1 class="text-white text-4xl md:text-5xl font-medium mb-8">
+                Our Mission
+              </h1>
+              <p class="text-sm text-white">
+                To create a dynamic and inclusive state government youth
+                development, empowerment, and innovation program that nurtures
+                our youth’s potential, employs data-driven techniques and
+                promotes innovation across several domains such as sports
+                ,technology and health.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          style="background-image: url('Images/our-mission2.png')"
+          class="mx-auto h-[470px] relative w-[420px] rounded-[30px] bg-black"
+        >
+          <div
+            class="absolute rounded-[30px] h-full flex items-end w-full bg-gradient-to-t opacity-100 from-[#153230] from-30% to-[#00000060] to-50% p-8"
+          >
+            <div class="h-6/12"></div>
+            <div class="h-44 overflow-y-auto scroll-container hide-scrollbar">
+              <h1 class="text-white text-4xl md:text-5xl font-medium mb-8">
+                Our Mission
+              </h1>
+              <p class="text-sm text-white">
+                To create a dynamic and inclusive state government youth
+                development, empowerment, and innovation program that nurtures
+                our youth’s potential, employs data-driven techniques and
+                promotes innovation across several domains such as sports
+                ,technology and health.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <a
+          href="#"
+          class="block text-[#0E192C] mb-20 rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+        >
+          <button
+            class="bg-[#006A31E5] text-white rounded text-base px-10 py-3"
+          >
+            About Us
+          </button>
+        </a>
+      </div>
+    </section>
+    <!--------------------------------------------------------- 
+                              End of vision
+       --------------------------------------------------------->
+    <section class="mx-auto">
+      <div class="mx-auto my-10 mt-20 md:mb-16">
+        <h1 class="text-[40px] font-semibold text-center">Key Strategies</h1>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 px-3 gap-8">
+        <div
+          class="mx-auto h-[300px] lg:h-[350px] relative sm:w-[345px] lg:px-7 rounded-xl bg-[#F1EFEA] flex text-center"
+        >
+          <div>
+            <div class="h-1/6 w-full"></div>
+            <div class="h-5/6 -mt-3">
+              <img src="Images/clapperboard 1 (1).png" class="mx-auto" alt="" />
+              <h1 class="text-black text-xl font-medium my-3">
+                Youth Engagement
+              </h1>
+              <p class="text-[15px] xl:text-base text-balance text-black">
+                Involve youths in the design, implementation, and evaluation of
+                AYEIP to ensure it meets their needs and aspirations.Conduct
+                extensive outreach and engagement efforts to involve as many
+                youth as possible through schools, community centers,and online
+                platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto h-[300px] lg:h-[350px] relative sm:w-[345px] lg:px-7 rounded-xl bg-[#F1EFEA] flex text-center"
+        >
+          <div>
+            <div class="h-1/6 w-full"></div>
+            <div class="h-5/6 -mt-3 px-2">
+              <img src="Images/clapperboard 2.png" class="mx-auto" alt="" />
+              <h1 class="text-black text-xl font-medium my-3">
+                Public-Private Partnership
+              </h1>
+              <p class="text-[15px] xl:text-base text-balance text-black">
+                Collaborate with businesses,educational institutions, and NGOs
+                to leverage resources,expertise,and networks for maximum impact.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto h-[300px] lg:h-[350px] relative sm:w-[345px] lg:px-7 rounded-xl bg-[#F1EFEA] flex text-center"
+        >
+          <div>
+            <div class="h-1/6 w-full"></div>
+            <div class="h-5/6 -mt-3 px-2">
+              <img src="Images/clapperboard 4.png" class="mx-auto" alt="" />
+              <h1 class="text-black text-xl font-medium my-3">
+                Digital Infrastructure
+              </h1>
+              <p class="text-[15px] xl:text-base text-balance text-black">
+                Leverage digital tools and platforms to facilitate information
+                access, data collection, and program monitoring and also program
+                applications, reporting,and feedback to streamline program
+                management and communication.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto h-[300px] lg:h-[350px] relative sm:w-[345px] lg:px-7 rounded-xl bg-[#F1EFEA] flex text-center"
+        >
+          <div>
+            <div class="h-1/6 w-full"></div>
+            <div class="h-5/6 -mt-3 px-2">
+              <img src="Images/clapperboard 1 (1).png" class="mx-auto" alt="" />
+              <h1 class="text-black text-xl font-medium my-3">
+                Evaluation and Adaptation
+              </h1>
+              <p class="text-[15px] xl:text-base text-balance text-black">
+                Regularly assess the program's effectiveness through impact
+                assessments, surveys, and feedback mechanisms, and adjust
+                strategies accordingly.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto h-[300px] lg:h-[350px] relative sm:w-[345px] lg:px-7 rounded-xl bg-[#F1EFEA] flex text-center"
+        >
+          <div>
+            <div class="h-1/6 w-full"></div>
+            <div class="h-5/6 -mt-3 px-2">
+              <img src="Images/clapperboard 2.png" class="mx-auto" alt="" />
+              <h1 class="text-black text-xl font-medium my-3">
+                Resource Mobilization
+              </h1>
+              <p class="text-[15px] xl:text-base text-balance text-black">
+                Secure funding from a combination of government budgets, grants,
+                private sector investments, and international development
+                partners.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto h-[300px] lg:h-[350px] relative sm:w-[345px] lg:px-7 rounded-xl bg-[#F1EFEA] flex text-center"
+        >
+          <div>
+            <div class="h-1/6 w-full"></div>
+            <div class="h-5/6 -mt-3 px-2">
+              <img src="Images/clapperboard 4.png" class="mx-auto" alt="" />
+              <h1 class="text-black text-xl font-medium my-3">
+                Sustainability
+              </h1>
+              <p class="text-[15px] xl:text-base text-balance text-black">
+                Develop a long-term sustainability plan that includes securing
+                funding, building local capacity, and institutionalizing the
+                program within state government structures
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------- 
+             support section
+   ------------------------------------->
+    <div class="my-10 md:mt-32">
+      <section
+        style="background-image: url('Images/project-bg.png')"
+        class="px-6 sm:px-20 lg:px-8 py-8 sm:py-16 lg:py-2 flex items-center lg:h-[80vh]"
+      >
+        <div
+          class="grid grid-cols-1 gap-x-4 lg:grid-cols-2 lg:gap-8 xl:w-11/12 mx-auto"
+        >
+          <div class="flex items-center order-2 lg:order-1">
+            <div class="order-2 lg:order-1 h-full flex items-center">
+              <div class="my-7 md:my-16 max-w-xl">
+                <h1
+                  class="text-[#272A28] text-3xl sm:text-4xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-10"
+                >
+                  Support Abia Youth Empowerment and Innovation Program
+                </h1>
+                <p class="text-[#272A28] text-[16px] text- text-pretty">
+                  AYEIP is designed to promote inclusion, upskilling, technology
+                  integration, and Sports Excellence while driving innovation,
+                  collaboration and Economic Growth among the youth population.
+                </p>
+                <div class="flex mt-6 gap-8">
+                  <a
+                    href="#"
+                    class="block text-[#0E192C] rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+                  >
+                    <button
+                      class="bg-[#006A31E5] text-white text-xs sm:text-sm w-32 sm:w-36 py-3 rounded-[3px] mt-4"
+                    >
+                      Donate
+                    </button>
+                  </a>
+                  <a
+                    href="#"
+                    class="block text-[#0E192C] rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+                  >
+                    <button
+                      class="bg-[#272A28] text-white text-xs sm:text-sm w-32 sm:w-36 py-3 rounded-[3px] mt-4"
+                    >
+                      See More
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-end order-1 lg:order-2">
+            <img src="Images/support.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!------------------------------------- 
+           support section
+ ------------------------------------->
+    <!-- footer -->
+    <section class="bg-[#F2F2F2] pt-4 sm:pt-10 lg:pt-12">
+      <footer class="mx-auto max-w-screen-2xl px-4 md:px-16">
+        <div
+          class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12"
+        >
+          <div class="col-span-full lg:col-span-2 font-medium">
+            <!-- logo - start -->
+            <div class="mb-4 lg:-mt-2 -ms-5">
+              <a
+                href="/"
+                class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl"
+                aria-label="logo"
+              >
+                <img src="Images/bg.png" class="w-48" alt="Abia state logo" />
+              </a>
+            </div>
+            <!-- logo - end -->
+
+            <p class="mb-6 text-gray-700 sm:pr-8">
+              Creating an enabling environment where every young person is
+              supported to thrive.
+            </p>
+
+            <!-- social - start -->
+            <div class="flex items-center gap-4">
+              <a href="#">
+                <i class="fa-brands fa-square-facebook text-3xl"></i>
+              </a>
+              <a href="#"> <i class="fa-brands fa-whatsapp text-3xl"></i> </a
+              ><a href="#"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            </div>
+            <!-- social - end -->
+            <p
+              class="text-gray-700 font-medium mt-12 mb-2 text-lg text- text-pretty"
+            >
+              info@abiayouthempowerment.com
+            </p>
+            <p class="text-gray-700 font-medium text-lg text- text-pretty">
+              26 Massenya street, Abia sample Address
+            </p>
+          </div>
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              About
+            </div>
+
+            <nav class="flex flex-col gap-4 font-medium">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Who are we</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Our focus area</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Our program</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Our projects</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              Media
+            </div>
+
+            <nav class="flex flex-col gap-4 font-medium">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Publications</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Policies
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Press Release</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Videos</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Webinars</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              Get Involved
+            </div>
+
+            <nav class="flex flex-col gap-4 font-medium">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Donate</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Careers</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Volunteer with us
+                </a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+        </div>
+
+        <div
+          class="border-t-2 border-[#00000060] py-8 text-center font-medium text-gray-700"
+        >
+          © 2024 Office – Abia youth empowerment. All Rights Reserved.
+        </div>
+      </footer>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>

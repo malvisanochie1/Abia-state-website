@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      .layout {
+        margin: auto;
+        width: 440px;
+        height: 470px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-auto">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="index.html">
+          <img
+            src="Images/logo.png"
+            class="h-16 md:h-20 xl:h-28"
+            alt="Abia state Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-[#006A31E5] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent xl:text-lg font-semibold hover:text-white text-base lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="Opportunities.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg xl:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Opportunities</a
+              >
+            </li>
+            <li>
+              <a
+                href="All_program_categories.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Programs & Event</a
+              >
+            </li>
+            <li>
+              <a
+                href="resources.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >News & Updates</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact-us.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 h"
+                >Contact</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="Become-a-partner.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+              >
+                <button
+                  class="bg-[#006A31E5] text-white md:rounded text-base px-6 py-2"
+                >
+                  Get Started
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+    style="
+      background-image: url('Images/Opportunities/Essential-Skills-Image-scaled\ 1.png');
+    "
+    class="md:h-[80vh] h-32 mx-auto relative"
+  >
+    <div class="h-full flex items-center">
+      <div class="z-10 w-full px-6 md:px-20 mx-auto">
+        <h2 class="md:text-5xl text-3xl text-start text-white font-bold mb-3">Opportunities</h2>
+        <hr class="md:w-52 w-32 h-[6px] md:h-2 bg-[#32B46E] rounded-md" />
+      </div>
+    </div>
+    <div class="w-full h-full absolute bg-[#080808] top-0 opacity-45"></div>
+  </section>
+    <!--------------------------------------- 
+                Event Section
+     --------------------------------------->
+    <section class="my-7 px-4 md:my-16 max-w-5xl mx-auto py-10">
+      <h1
+        class="text-center text-[#272A28] text-3xl sm:text-4xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-6"
+      >
+        Our Events
+      </h1>
+      <p
+        class="text-[#272A28] text-[16px] md:text-xl font-semibold text-pretty"
+      >
+        Explore a dynamic array of empowering events and opportunities curated
+        to suit your unique needs. From skill-building workshops through
+        seminars to mentorship programs, discover opportunities that foster
+        growth, resilience, and collaboration among today’s youth. Say hello toa
+        world of ample opportunities.
+      </p>
+    </section>
+    <section class="bg-[#EDFCF8] py-32">
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="grid grid-cols-1 justify-center gap-4 lg:grid-cols-2 lg:gap-8 px-4"
+        >
+          <div
+            class="order-2 lg:order-1 flex flex-col gap-8 lg:gap-16 mx-auto lg:justify-between max-w-lg max-h-96"
+          >
+            <div class="flex lg:items-center text-center lg:mt-10">
+              <h3 class="text-2xl font-semibold">Upcoming Event</h3>
+            </div>
+            <div class="flex lg:items-center justify-center">
+              <div>
+                <h1 class="text-4xl lg:text-5xl lg:mt-8 leading-snug font-bold">
+                  Abia Youth Empowerment Submit 2024
+                </h1>
+                <div
+                  class="flex mt-4 lg:mt-10 justify-between text-center text-[#272A28] max-w-96"
+                >
+                  <div>
+                    <h2 class="text-5xl font-semibold">31</h2>
+                    <p class="text-xl font-bold">Days</p>
+                  </div>
+                  <div>
+                    <h2 class="text-6xl -mt-2 font-bold">:</h2>
+                  </div>
+                  <div>
+                    <h2 class="text-5xl font-semibold">16</h2>
+                    <p class="text-xl font-bold">Hours</p>
+                  </div>
+                  <div>
+                    <h2 class="text-6xl -mt-2 font-bold">:</h2>
+                  </div>
+                  <div>
+                    <h2 class="text-5xl font-semibold">20</h2>
+                    <p class="text-xl font-bold">Mins</p>
+                  </div>
+                  <div>
+                    <h2 class="text-6xl -mt-2 font-bold">:</h2>
+                  </div>
+                  <div>
+                    <h2 class="text-5xl font-semibold">50</h2>
+                    <p class="text-xl font-bold">Secs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex lg:items-end">
+              <a
+                href="#"
+                class="block text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+              >
+                <button
+                  class="bg-[#006A31E5] text-white rounded text-base px-10 py-3"
+                >
+                  Register
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <img
+              src="Images/Opportunities/Image.png"
+              alt="An image of Abia state youths "
+              class="mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------- 
+               End of event Section
+     --------------------------------------->
+
+    <div class="max-w-xl mx-auto mt-20">
+      <h1
+        class="text-3xl text-center lg:text-5xl lg:mt-8 leading-snug font-bold"
+      >
+        Upcoming Opportunities
+      </h1>
+      <p class="text-center text-xl md:text-2xl mt-3 md:mt-5">
+        Explore a dynamic array of empowering events and opportunities curated
+        to suit your unique needs.
+      </p>
+    </div>
+    <div class="max-w-xl mx-auto mt-20">
+      <p class="text-center text-xl font-semibold md:text-2xl mt-3 md:mt-5">
+        Upcoming 2024 March Events
+      </p>
+    </div>
+    <div class="px-4">
+      <div
+        class="max-w-xl md:max-w-4xl md:py-10 mx-auto mt-10 shadow-xl rounded bg-[#EDFCF8]"
+      >
+        <div class="grid grid-cols-12 justify-center">
+          <div class="col-span-3 flex justify-center items-center">
+            <div><h1 class="text-lg md:text-xl font-bold">March 15</h1></div>
+          </div>
+          <div class="col-span-6 flex justify-center items-center">
+            <div class="p-3">
+              <h2 class="text-xl md:text-2xl mb-2 font-bold">
+                Skill development workshop
+              </h2>
+              <p class="text-sm md:text-lg text-pretty">
+                Explore a dynamic array of empowering events and opportunities
+                curated to suit your unique needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-3 flex justify-center items-center">
+            <img src="Images/Opportunities/calendar.png" class="h-10" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-xl md:max-w-4xl md:py-10 mx-auto mt-10 shadow-xl rounded bg-[#EDFCF8]"
+      >
+        <div class="grid grid-cols-12 justify-center">
+          <div class="col-span-3 flex justify-center items-center">
+            <div><h1 class="text-lg md:text-xl font-bold">April 27</h1></div>
+          </div>
+          <div class="col-span-6 flex justify-center items-center">
+            <div class="p-3">
+              <h2 class="text-xl md:text-2xl mb-2 font-bold">
+                The New Tech Abia
+              </h2>
+              <p class="text-sm md:text-lg text-pretty">
+                Explore a dynamic array of empowering events and opportunities
+                curated to suit your unique needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-3 flex justify-center items-center">
+            <img src="Images/Opportunities/calendar.png" class="h-10" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-xl md:max-w-4xl md:py-10 mx-auto mt-10 shadow-xl rounded bg-[#EDFCF8]"
+      >
+        <div class="grid grid-cols-12 justify-center">
+          <div class="col-span-3 flex justify-center items-center">
+            <div><h1 class="text-lg md:text-xl font-bold">May 19</h1></div>
+          </div>
+          <div class="col-span-6 flex justify-center items-center">
+            <div class="p-3">
+              <h2 class="text-xl md:text-2xl mb-2 font-bold">
+                Healthy Ecosystem for Abia Youth
+              </h2>
+              <p class="text-sm md:text-lg text-pretty">
+                Explore a dynamic array of empowering events and opportunities
+                curated to suit your unique needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-3 flex justify-center items-center">
+            <img src="Images/Opportunities/calendar.png" class="h-10" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-xl md:max-w-4xl md:py-10 mx-auto my-10 shadow-xl rounded bg-[#EDFCF8]"
+      >
+        <div class="grid grid-cols-12 justify-center">
+          <div class="col-span-3 flex justify-center items-center">
+            <div><h1 class="text-lg md:text-xl font-bold">Aug 18</h1></div>
+          </div>
+          <div class="col-span-6 flex justify-center items-center">
+            <div class="p-3">
+              <h2 class="text-xl md:text-2xl mb-2 font-bold">
+                Youth Agricultural Financing
+              </h2>
+              <p class="text-sm md:text-lg text-pretty">
+                Explore a dynamic array of empowering events and opportunities
+                curated to suit your unique needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-3 flex justify-center items-center">
+            <img src="Images/Opportunities/calendar.png" class="h-10" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="flex lg:items-end mx-auto">
+        <a
+          href="#"
+          class="block text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white mx-auto"
+        >
+          <button class="bg-[#006A31E5] text-white rounded text-lg px-20 py-5">
+            Register
+          </button>
+        </a>
+      </div>
+    </div>
+    <!------------------------------------- 
+             support section
+   ------------------------------------->
+   <div class="mt-20">
+    <section
+      style="background-image: url('Images/project-bg.png')"
+      class="px-6 sm:px-20 lg:px-8 py-8 sm:py-16 lg:py-2 flex items-center lg:h-[80vh]"
+    >
+      <div
+        class="grid grid-cols-1 gap-x-4 lg:grid-cols-2 lg:gap-8 xl:w-11/12 mx-auto"
+      >
+        <div class="flex items-center order-2 lg:order-1">
+          <div class="order-2 lg:order-1 h-full flex items-center">
+            <div class="my-7 md:my-16 max-w-xl">
+              <h1
+                class="text-[#272A28] text-3xl sm:text-4xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-10"
+              >
+                Support Abia Youth Empowerment and Innovation Program
+              </h1>
+              <p class="text-[#272A28] text-[16px] text- text-pretty">
+                AYEIP is designed to promote inclusion, upskilling, technology
+                integration, and Sports Excellence while driving innovation,
+                collaboration and Economic Growth among the youth population.
+              </p>
+              <div class="flex mt-6 gap-8">
+                <a
+                  href="#"
+                  class="block text-[#0E192C] rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+                >
+                  <button
+                    class="bg-[#006A31E5] text-white text-xs sm:text-sm w-36 py-3 rounded-[3px] mt-4"
+                  >
+                    Donate
+                  </button>
+                </a>
+                <a
+                  href="#"
+                  class="block text-[#0E192C] rounded lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+                >
+                  <button
+                    class="bg-[#272A28] text-white text-xs sm:text-sm w-36 py-3 rounded-[3px] mt-4"
+                  >
+                    See More
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-end order-1 lg:order-2">
+          <img src="Images/support.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </div>
+  <!------------------------------------- 
+           support section
+ ------------------------------------->
+ <!-- footer -->
+ <section class="bg-[#F2F2F2] pt-4 sm:pt-10 lg:pt-12">
+  <footer class="mx-auto max-w-screen-2xl px-4 md:px-16">
+    <div
+      class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12"
+    >
+      <div class="col-span-full lg:col-span-2 font-medium">
+        <!-- logo - start -->
+        <div class="mb-4 lg:-mt-2 -ms-5">
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl"
+            aria-label="logo"
+          >
+            <img src="Images/bg.png" class="w-48" alt="Abia state logo" />
+          </a>
+        </div>
+        <!-- logo - end -->
+
+        <p class="mb-6 text-gray-700 sm:pr-8">
+          Creating an enabling environment where every young person is
+          supported to thrive.
+        </p>
+
+        <!-- social - start -->
+        <div class="flex items-center gap-4">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook text-3xl"></i>
+          </a>
+          <a href="#"> <i class="fa-brands fa-whatsapp text-3xl"></i> </a
+          ><a href="#"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+        </div>
+        <!-- social - end -->
+        <p
+          class="text-gray-700 font-medium mt-12 mb-2 text-lg text- text-pretty"
+        >
+          info@abiayouthempowerment.com
+        </p>
+        <p class="text-gray-700 font-medium text-lg text- text-pretty">
+          26 Massenya street, Abia sample Address
+        </p>
+      </div>
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          About
+        </div>
+
+        <nav class="flex flex-col gap-4 font-medium">
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Who are we</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Our focus area</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Our program</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Our projects</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          Media
+        </div>
+
+        <nav class="flex flex-col gap-4 font-medium">
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Publications</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Policies
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Press Release</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Videos</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Webinars</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+          Get Involved
+        </div>
+
+        <nav class="flex flex-col gap-4 font-medium">
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Donate</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Careers</a
+            >
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+              >Volunteer with us
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+    </div>
+
+    <div
+      class="border-t-2 border-[#00000060] py-8 text-center font-medium text-gray-700"
+    >
+      © 2024 Office – Abia youth empowerment. All Rights Reserved.
+    </div>
+  </footer>
+</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      .layout {
+        margin: auto;
+        width: 440px;
+        height: 470px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body class="text-[#1D2026]">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-auto">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="index.html">
+          <img
+            src="Images/logo.png"
+            class="h-16 md:h-20 xl:h-28"
+            alt="Abia state Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-[#006A31E5] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent xl:text-lg font-semibold hover:text-white text-base lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="Opportunities.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg xl:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Opportunities</a
+              >
+            </li>
+            <li>
+              <a
+                href="All_program_categories.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >Programs & Event</a
+              >
+            </li>
+            <li>
+              <a
+                href="resources.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0"
+                >News & Updates</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact-us.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold hover:text-white text-base xl:text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 h"
+                >Contact</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="Become-a-partner.html"
+                class="block py-2 px-3 text-[#0E192C] rounded hover:bg-[#006A31E5] lg:hover:bg-transparent font-medium hover:font-semibold text-lg lg:border-0 lg:hover:text-[#006A31E5] lg:p-0 dark:text-white"
+              >
+                <button
+                  class="bg-[#006A31E5] text-white md:rounded text-base px-6 py-2"
+                >
+                  Get Started
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="">
+      <section
+        style="background-image: url('Images/project-bg.png')"
+        class="lg:ps-8 flex items-center px-8 lg:px-0 py-8 lg:py-0"
+      >
+        <div class="grid grid-cols-1 gap-x-4 lg:grid-cols-2 lg:gap-8 mx-auto">
+          <div class="flex items-center order-2 lg:order-1">
+            <div
+              class="order-2 lg:order-1 h-full flex items-center px-4 lg:ps-10"
+            >
+              <div class="max-w-sm py-6">
+                <h1
+                  class="text-[#272A28] text-3xl sm:text-4xl lg:text-5xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-10"
+                >
+                  Contact us
+                </h1>
+                <p class="text-[#272A28] text-[16px] text- text-pretty">
+                  Abia youth empowerment and Innovation program AYEIP
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-end order-1 lg:order-2">
+            <img
+              src="Images/Contact-breadcrumb-picture 1.png"
+              class="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="lg:px-20 bg-[#EDFCF8] drop-shadow-lg py-10">
+      <div class="grid grid-cols-1 gap-x-4 lg:grid-cols-2 lg:gap-8 mx-auto">
+        <div class="flex items-center justify-center order-2 lg:order-1">
+          <div class="order-2 lg:order-1 h-full flex items-center px-4">
+            <div class="max-w-sm">
+              <h1
+                class="text-[#272A28] text-xl font-medium mt-3 sm:mt-6 mb-5 sm:mb-10"
+              >
+                Abia youth empowerment and innovation program
+              </h1>
+              <div
+                style="background-image: url('Images/bg=whF.png')"
+                class="bg-cover"
+              >
+                <h1
+                  class="text-[#272A28] text-xl font-bold mt-3 sm:mt-4 mb-5 sm:mb-10"
+                >
+                  Address
+                </h1>
+                <p class="text-[#1D2026] text-lg font-medium text- text-pretty">
+                  What ever address provided by the client will be here
+                </p>
+                <h1
+                  class="text-[#1D2026] text-xl font-bold mt-3 sm:mt-4 mb-5 sm:mb-10"
+                >
+                  Contact
+                </h1>
+              </div>
+
+              <p class="text-[#1D2026] font-medium text-lg text- text-pretty">
+                +234 (0) 9 0975 44444
+              </p>
+              <p
+                class="text-[#1D2026] font-medium my-2 text-lg text- text-pretty"
+              >
+                +234 (0) 9 0980 44444
+              </p>
+              <p class="text-[#1D2026] font-medium text-lg text- text-pretty">
+                info@abiayouthempowerment.org
+              </p>
+              <h1
+                class="text-[#1D2026] text-xl font-bold mt-3 sm:mt-4 mb-2 sm:mb-4"
+              >
+                Contact
+              </h1>
+              <div class="flex items-center gap-4">
+                <i class="fa-brands fa-square-facebook text-3xl"></i>
+                <i class="fa-brands fa-whatsapp text-3xl"></i>
+                <i class="fa-brands fa-instagram text-3xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center lg:justify-start order-1 lg:order-2">
+          <div class="py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+              <!-- text - start -->
+              <div class="mb-10">
+                <h2
+                  class="mb-4 xl:text-center text-xl font-bold text-gray-800 md:mb-6"
+                >
+                  We are looking forward to connecting with you
+                </h2>
+              </div>
+              <!-- text - end -->
+
+              <!-- form - start -->
+              <form class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
+                <div class="sm:col-span-2">
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    id="name"
+                    class="border-2 bg-white w-full border-[#faf9f9] text-[#CFD0D2] font-medium rounded focus:ring-0 block py-3 dark:placeholder-gray-400 dark:text-white focus:border-green-900"
+                    required=""
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    id="email"
+                    class="border-2 bg-white w-full border-[#faf9f9] text-[#CFD0D2] font-medium rounded focus:ring-0 block py-3 dark:placeholder-gray-400 dark:text-white focus:border-green-900"
+                    required=""
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <textarea
+                    name="message"
+                    type="text"
+                    placeholder="Enter Message"
+                    class="h-72 w-full border-2 border-[#faf9f9] text-[#CFD0D2] font-medium rounded focus:ring-0 block py-3 dark:placeholder-gray-400 dark:text-white focus:border-green-900"
+                  ></textarea>
+                </div>
+
+                <div class="flex items-center justify-between sm:col-span-2">
+                  <button
+                    class="w-full rounded bg-[#006A31] px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-0 transition duration-100 0 md:text-base"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+              <!-- form - end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#F2F2F2] pt-4 sm:pt-10 lg:pt-12">
+      <footer class="mx-auto max-w-screen-2xl px-4 md:px-16">
+        <div
+          class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12"
+        >
+          <div class="col-span-full lg:col-span-2 font-medium">
+            <!-- logo - start -->
+            <div class="mb-4 lg:-mt-2 -ms-5">
+              <a
+                href="/"
+                class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl"
+                aria-label="logo"
+              >
+                <img src="Images/bg.png" class="w-48" alt="Abia state logo" />
+              </a>
+            </div>
+            <!-- logo - end -->
+
+            <p class="mb-6 text-gray-700 sm:pr-8">
+              Creating an enabling environment where every young person is
+              supported to thrive.
+            </p>
+
+            <!-- social - start -->
+            <div class="flex items-center gap-4">
+              <a href="#">
+                <i class="fa-brands fa-square-facebook text-3xl"></i>
+              </a>
+              <a href="#"> <i class="fa-brands fa-whatsapp text-3xl"></i> </a
+              ><a href="#"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            </div>
+            <!-- social - end -->
+            <p
+              class="text-gray-700 font-medium mt-12 mb-2 text-lg text- text-pretty"
+            >
+              info@abiayouthempowerment.com
+            </p>
+            <p class="text-gray-700 font-medium text-lg text- text-pretty">
+              26 Massenya street, Abia sample Address
+            </p>
+          </div>
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              About
+            </div>
+
+            <nav class="flex flex-col gap-4 font-medium">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Who are we</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Our focus area</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Our program</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Our projects</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              Media
+            </div>
+
+            <nav class="flex flex-col gap-4 font-medium">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Publications</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Policies
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Press Release</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Videos</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Webinars</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              Get Involved
+            </div>
+
+            <nav class="flex flex-col gap-4 font-medium">
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Donate</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Careers</a
+                >
+              </div>
+
+              <div>
+                <a
+                  href="#"
+                  class="text-gray-700 transition duration-100 hover:text-[#006A31] active:text-[#006A31]"
+                  >Volunteer with us
+                </a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+        </div>
+
+        <div
+          class="border-t-2 border-[#00000060] py-8 text-center font-medium text-gray-700"
+        >
+          © 2024 Office – Abia youth empowerment. All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>
